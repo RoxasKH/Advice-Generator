@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86" /> <!-- For mobile adapting -->
+  <link rel="icon" href="dice.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="dice.png" type="image/x-icon" /> <!-- To support IE as well -->
+  <title>Advice Generator</title>
+  <meta name="description" content="Get the advice you need.">
+  <meta name="keywords" content="random advice generator app web">
+
+  <link href="style.css" rel = "stylesheet">
+  <link href="queries.css" rel = "stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div id = "header"></div>
+
+  <div class = "container">
+
+    <div class = "content">
+
+      <p class = "title"></p>
+
+      <p id = "advice">Loading...</p>
+
+      <div class = "divider">
+        <div class = "line"><hr></div>
+        <div class = "rectangle"></div>
+        <div class = "rectangle"></div>
+        <div class = "line"><hr></div>
+      </div>
+
+    </div>
+
+    <div class = "button">
+        <!--<img src = "Dice.png" >-->
+
+      <div class="dice" onclick="getAdvice()" title="Get another advice">
+
+        <div class="column">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+  
+        <div class="column">
+          <span class="dot"></span>
+        </div>
+  
+        <div class="column">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>  
+
+  <div id = "footer">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db"> Frontend Mentor </a>. Coded by <a href="https://github.com/RoxasKH"> Roxas </a>.
+  </div>
+
+</body>
+
+</html>
