@@ -1,0 +1,144 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box; /* width include borders */
+  height: 100%;
+  touch-action: manipulation; /* Remove 300ms tap delay */
+}
+
+body {
+  background-color: #202632;
+  color: #CEE3E9;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+hr {
+  color: #404B5D;
+  border: 1px solid #404B5D;
+}
+
+a {
+  color: #52FFA8;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+  background-color: #323A49;
+  padding: 30px 40px 50px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 12px;
+  color: #52FFA8;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+}
+
+#advice {
+  margin: 20px 0 10px 0;
+}
+
+.line {
+  display: inline-block;
+  width: 40%;
+  margin: 0 8px 0 8px;
+  padding-top: 10px;
+  margin-bottom: -6px;
+}
+
+.rectangle {
+  background-color: #CEE3E9;
+  display: inline-block;
+  height: 16px;
+  width: 6px;
+  border-radius: 3px;
+  margin: 0 2px 0 1px;
+}
+
+.button {
+  border-radius: 50%;
+  background-color: #52FFA8;
+  height: 60px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -35px;
+  position: relative;
+}
+
+.button:hover {
+  box-shadow: 0 0 50px #52FFA8;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #323A49;
+  text-align: center;
+  font-size: 13px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+
+/* Dice */
+
+.dice {  
+  padding: 4px;  
+  background-color: #202733;  
+  width: 13px;  
+  height: 13px;  
+  border-radius: 20%;
+  display: block;
+
+  /*centering the dice (needs position: relative in the container = button)*/
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.dot {
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #52FFA8;
+ }
+
+ .dice {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.dice .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.dice .column:nth-of-type(2) {
+  justify-content: center;
+}
