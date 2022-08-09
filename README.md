@@ -52,6 +52,8 @@ The dice was made completely in CSS using [Flexbox](https://developer.mozilla.or
 You can find a detailed guide [here](https://betterprogramming.pub/creating-dice-in-flexbox-in-css-a02a5d85e516).
 A different approach exploiting [CSS Grid](https://dev.to/ekeijl/creating-dice-using-css-grid-j4) instead of Flexbox exists as well if you're interested.
 
+The fancy divider was also made in CSS because why not.
+
 ### Useful resources
 
 - [Single Element Spinning 3D Dice](https://alvaromontoro.com/blog/67992/single-element-dice-with-css) - Not really useful but you can make a 3D spinning dice with CSS. Just wanted to share. Watch it spin.
